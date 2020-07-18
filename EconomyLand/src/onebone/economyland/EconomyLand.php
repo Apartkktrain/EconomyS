@@ -624,11 +624,10 @@ class EconomyLand extends PluginBase implements Listener {
 		return "Couldn't find message \"$key\"";
 	}
 
-	public function onPlayerInteract(PlayerInteractEvent $event) {
-		if($event->getAction() === PlayerInteractEvent::RIGHT_CLICK_BLOCK) {
-			$this->permissionCheck($event);
-		}
-	}
+        public function onPlayerInteract(PlayerInteractEvent $event) 
+	{
+            $this->permissionCheck($event);
+        }
 
 	public function permissionCheck(Event $event) {
 		/** @var $player Player */
