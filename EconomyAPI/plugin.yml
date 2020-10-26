@@ -33,10 +33,10 @@ permissions:
             default: true
           economyapi.command.topmoney:
             description: Allows player to see top money list
-            default: true
+            default: op
           economyapi.command.mystatus:
             description: Allows player to see his/her financial status
-            default: true
+            default: op
           economyapi.command.takemoney:
             description: Allows player to take money from others
             default: op
